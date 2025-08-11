@@ -121,7 +121,7 @@ module Compiler
         #-----------------------------------------------------------------------
         # Compiles a data hash for each text file found in PBS/Plugins/#{plugin}.
         #-----------------------------------------------------------------------
-        next if !text_files[data_type] || text_files[data_type][1].empty?
+        next if !text_files[data_type] || !text_files[data_type][1] || text_files[data_type][1].empty?
         text_files[data_type][1].each do |file_name|
           file_path = file_name.split("/")[1]
           path = "PBS/Plugins/#{plugin}/#{file_path}"
