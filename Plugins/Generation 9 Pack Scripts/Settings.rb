@@ -17,7 +17,7 @@ module Settings
   # status is doubled if a move is capable of inflicting Frostbite. Pokemon with
   # the Drowsy status are also twice as likely to be unable to act each turn.
   #-----------------------------------------------------------------------------
-  HAIL_WEATHER_TYPE = 1
+  HAIL_WEATHER_TYPE = 2
   
   
   #=============================================================================
@@ -27,13 +27,13 @@ module Settings
   # will call the Drowsy/Frostbite statuses instead. If false, they will be
   # treated as separate status conditions.
   #-----------------------------------------------------------------------------
-  SLEEP_EFFECTS_CAUSE_DROWSY     = false
-  FREEZE_EFFECTS_CAUSE_FROSTBITE = false
+  SLEEP_EFFECTS_CAUSE_DROWSY     = true
+  FREEZE_EFFECTS_CAUSE_FROSTBITE = true
   #-----------------------------------------------------------------------------
   # When true, Sleep can be cured by getting hit from electrocute moves.
   # (Spark, Volt Tackle, and Wild Charge)
   #-----------------------------------------------------------------------------
-  ELECTROCUTE_MOVES_CURE_SLEEP = false
+  ELECTROCUTE_MOVES_CURE_SLEEP = true
   
 
   #=============================================================================
